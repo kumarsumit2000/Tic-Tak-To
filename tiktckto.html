@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background: black;
+    }
+    .container{
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+        background: #212121;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .buttons{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        width: 60px;
+        height: 60px;
+        margin: 10px;  
+        outline: none;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        border: 2px red solid;
+    }
+    button:nth-child(2n){
+        border: 2px green solid;
+    }
+    .btn{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+   #reset{
+    font-size: 0.8rem;
+    width: auto;
+    height: auto;
+    padding: 5px;
+    display: none;
+   }
+   #newgame{
+    font-size: 0.8rem;
+    width: auto;
+    height: auto;
+    padding: 5px;
+   }
+   #winnershow{
+    color: white;
+   }
+    h2{
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Tic-Tac-Toe</h2>
+        <div class="buttons">
+            <button class="box">
+            </button><button class="box"></button><button class="box"></button><button class="box"></button><button
+                class="box"></button><button class="box"></button><button class="box"></button><button
+                class="box"></button><button class="box"></button>
+        </div>
+        <div id="winnershow"></div>
+        <div class="btn"><button id="reset">New Game</button></div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
